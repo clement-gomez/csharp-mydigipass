@@ -17,11 +17,11 @@ namespace MYDIGIPASS.COM
                 MYDIGIPASSAuth mydigipass = new MYDIGIPASSAuth();
                 mydigipass.ApiTokenUrl = "https://sandbox.mydigipass.com/oauth/token";
                 mydigipass.ApiAuthorizationUrl = "https://sandbox.mydigipass.com/oauth/user_data";
-                mydigipass.ApiRedirectUri = "{redirect-uri}";
-                mydigipass.ApiConnectUrl = "{api-connected-url}";
-                mydigipass.ApiDisconnectUrl = "{api-dissconect-url}";
+                mydigipass.ApiConnectUrl = "https://sandbox.mydigipass.com/api/uuids/connected";
+                mydigipass.ApiDisconnectUrl = "https://sandbox.mydigipass.com/api/uuids/disconnected";
                 mydigipass.ApiKey = "{client-id}";
                 mydigipass.ApiSecret = "{client-secret}";
+				mydigipass.ApiRedirectUri = "{redirect-uri}";
                 mydigipass.ApiCode = Request["code"];
 
                 mydigipass.AccessToken();

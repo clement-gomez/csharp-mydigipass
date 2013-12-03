@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <a class="dpplus-connect" data-style="large" data-help = "true" data-client-id="{client-id}" data-redirect-uri="{redirect-uri}" data-origin="{origin}" href="#">Connect with MYDIGIPASS.COM</a>
+        <a class="dpplus-connect" data-style="large" data-help = "true" data-client-id="{client-id}" data-redirect-uri="{redirect-uri}" data-origin="https://sandbox.mydigipass.com" href="#">Connect with MYDIGIPASS.COM</a>
         <br />
         <br />
         

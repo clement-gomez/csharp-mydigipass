@@ -10,29 +10,23 @@ Advantages:
 
 •	All traffic towards MYDIGIPASS.COM is encrypted (SSL). Credentials are never exposed.
 
-This is a simple C# wrapper to integrate VASCO's MYDIGIPASS.com strong two-factor authentication into your web application.
 
+This is a simple C# wrapper to integrate VASCO's MYDIGIPASS.COM strong two-factor authentication into your web application.
 
-To get it working
+To get it working:
 
-First you need to insert this wrapper into your asp.net project.
+The first step is to register your application and provide your application settings.
+You will then receive a sandbox client_id & client_secret for each test application you register.
+You'll need these two parameters and the redirect_uri callback you configured to complete the next steps.
+Please follow the developer guide at the following url, https://developer.mydigipass.com/getting_started.
+
 In the file "Default.aspx.cs" you have to set up the following fields:
--	The API redirection URI ("mydigipass.ApiRedirectUri")
 -	The API Key ("mydigipass.ApiKey")
 -	The API Secret ("mydigipass.ApiSecret")
+-	The API redirection URI ("mydigipass.ApiRedirectUri")
 
-In the file “Default.aspx” you have to make sure that you point to the correct mydigipass.com site. For test purpose you don't have to change the source of the javascript (https://sandbox.mydigipass.com/dp_connect.js). If you want to go live with your website make sure you are pointing to https://www.mydigipass.com/dp_connect.js.
-Also in the “Default.aspx” page you have to adapt the parameters of the link (“client-id” & “redirect-uri”).
-
-
-You will get the API Key and Secret from mydigipass.com, when you register a website to the application, following this steps:
--	go to the developer site
--	register / create a test site, with redirect_uri equal to your test site
--	you get a client-id and a client-secret
--	fill in the client-id and client-secret in the Default.aspx.cs file
--	open your testsite and try it out.
-
-You will find more information on developer.mydigipass.com
+In the file "Default.aspx" you have to 
+-	Configure the button's attributes ("data-client-id", "data-redirect-uri", "data-origin"). For test purpose "data-origin" points to the sandbox environment https://sandbox.mydigipass.com.
 
 
 License
