@@ -18,7 +18,7 @@ To get it working:
 The first step is to register your application and provide your application settings.
 You will then receive a sandbox client_id & client_secret for each test application you register.
 You'll need these two parameters and the redirect_uri callback you configured to complete the next steps.
-Please follow the developer guide at the following url, https://developer.mydigipass.com/getting_started.
+Please follow the developer guide at the following url, https://developer.mydigipass.com/introduction
 
 In the file "Default.aspx.cs" you have to set up the following fields:
 -	The API Key ("mydigipass.ApiKey")
